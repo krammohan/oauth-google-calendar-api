@@ -35,6 +35,15 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Devise gem for working with Rails5
+gem 'devise', github: 'twalpole/devise', branch: 'master' 
+
+# Allows use of Devise with Google OmniAuth
+gem 'omniauth-google-oauth2'
+
+
+gem 'dotenv-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
