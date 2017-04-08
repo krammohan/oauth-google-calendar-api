@@ -41,7 +41,12 @@ gem 'devise', github: 'twalpole/devise', branch: 'master'
 # Allows use of Devise with Google OmniAuth
 gem 'omniauth-google-oauth2'
 
+<<<<<<< HEAD
 gem 'pg'
+=======
+# 
+gem 'google-api-client', '0.8.2', require: 'google/api_client'
+>>>>>>> 5d8c24f5d678c6ee93d46e4965842e7e7fcbd700
 
 gem 'dotenv-rails'
 
