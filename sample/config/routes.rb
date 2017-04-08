@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # Specify which controller Devise should use as callbacks controller
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 
-  post '/users/auth/google_oauth2/callback', to: 'sessions#create'
+  get '/users/auth/google_oauth2/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
